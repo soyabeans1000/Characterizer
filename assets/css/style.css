@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'new_waltographregular';
+  src: url('disney_font/new_walt_disney-webfont.woff2') format('woff2'),
+       url('disney_font/new_walt_disney-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal
+}
+
+body
+ {
+    font-family: "new_waltographregular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+     color: red;
+     font-size: 2em;
+     background-image: url('../images/background4.jpg');
+    font-weight:bolder;
+    background-size:cover;
+    background-position:center;
+   
+ }
+  
+  .containe3
+  {
+  opacity: 0.94;
+  min-height:100vh;
+  /* border: 10px solid white; */
+  }
+
+  .main-game
+  {
+    min-height:100vh;
+  }
+
+  .instructions
+  {
+    font-size:0.7em;
+    font-family: Arial; 
+  }
+
+  .final_score
+  {
+    font-size:1.2em;
+  }
+
+  .scoreboard
+  {
+    font-size:1em;
+    line-height:1em;
+    font-family: "new_waltographregular";
+  }
+
+  

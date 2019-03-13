@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Disne</title>
+
+  <!-- CSS  -->
+  <link href="assets/css/CSS_Reset.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+   
+  <div class="container">
+
+       <div class="main-game valign-wrapper white"> 
+    <div class="center-align">
+        <h1>Disney Characterizer Game</h1>
+        <!--Starting  grid to contain all components of Game-->
+
+ <!--First Row with Instructions-->
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="instructions black-text">You will be given a random number at the begining of the game. The goal of the game is to match your score to that number. To add points to your score, click on one of the character. Each character has a different value to add to your score. Be careful! If you go past the random number amount, you will lose.
+              </div>
+            </div>
+        </div>
+
+<!--Second Row with Instructions-->
+        <div class="row">
+            <div class="col s12 m12">
+                <div id="result">    </div>
+                <div id="gameMessenger">    </div>
+            </div>
+        </div>
+     
+                  <!--Starting Third row -->
+          <div class="row">
+            <div class="col s3 m3">
+                <a href="#">
+                <img src="assets/images/Snow White.jpg" class="character responsive-img" data-btn-value="0"></a>
+            </div>
+                     
+            <div class="col s3 m3">
+                <a href="#">
+                  <img src="assets/images/goofy.jpg" class="character responsive-img" data-btn-value="0"></a> 
+            </div>
+            <div class="col s3 m3">                      
+                <a href="#">
+                    <img src="assets/images/Belle.jpg" class="character responsive-img" data-btn-value="0"></a>
+            </div>
+
+            <div class="col s3 m3">                      
+                <a href="#">
+                    <img src="assets/images/olaf.jpg" class="character responsive-img" data-btn-value="0"></a>
+            </div>
+        </div>                      
+        <div class="col s12 m12">
+            <div class="black-text">
+             
+          </div> 
+        </div>
+  
+
+          <!--Starting fourth row -->
+          <div class="row">
+            <div class="col s6 m6">
+                <div class="scoreboard black-text"> 
+                    <div id="totalGamesPlayed"></div>
+                    <div id="wins"></div>
+                    <div id="losses"></div>                
+                  </div>
+               </div>
+
+              <div class="col s6 m6 ">
+                  <p id="goalNum"> </p>
+                  <div id="currNum">
+                </div> 
+              </div>            
+              </div>        
+        <!--End  grid to contain all components of Game--> 
+    <!--End of Main Game container and vertical wrapper-->
+      </div>
+    </div>
+   </div>
+</body>
+
+  <script src="assets/js/crystal.js"></script>
+
+  </body>
+</html>

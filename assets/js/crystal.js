@@ -8,6 +8,7 @@ let isDone = false
 
 // game initializer
 const init = _ => {
+
   // set isDone false for game progress
   isDone = false
   // reset current guess value
@@ -18,6 +19,8 @@ const init = _ => {
   document.querySelector('#goalNum').textContent = `Goal Number : ${goalNum}`
   document.querySelector('#currNum').textContent = `Current Value : ${currNum}`
   document.querySelector('#result').textContent = ''
+
+  
   
 }
 
@@ -45,35 +48,36 @@ document.addEventListener('click', e => {
     // win case :
     if (currNum === goalNum) {
       // display success message
-      document.querySelector('#result').textContent = 'You Won! Starting New Game...'
+      document.querySelector('#gameMessenger').textContent = 'You Won! Starting New Game...'
       // increment wins up
       wins++
       //increment the total games played
       totalGames++
       // display the new wins count
-      document.querySelector('#wins').textContent = `Wins : ${wins}`
-      document.querySelector('#totalGamesPlayed').textContent= `Games Played: ${totalGames}`
+      document.querySelector('#wins').textContent = `${wins}`
+      document.querySelector('#totalGamesPlayed').textContent= `${totalGames}`
       // sets the game to be over
       isDone = true
       // lose case :
       init()
     } else if (currNum > goalNum) {
       // display fail message
-      document.querySelector('#result').textContent = 'You Lost! Starting New Game...'
+      document.querySelector('#gameMessenger').textContent = 'You Lost! Starting New Game...'
       // increment losses up
       losses++
       //increment the total games played
       totalGames++
       // display losses count
-      document.querySelector('#losses').textContent = `Losses: ${losses}`
-      document.querySelector('#totalGamesPlayed').textContent= `Games Played: ${totalGames}`
+      document.querySelector('#losses').textContent = `${losses}`
+      document.querySelector('#totalGamesPlayed').textContent= `${totalGames}`
       // sets game to be over
       isDone = true
       init()
       // playing case :
     } else {
       // displays message to keep playing
-      document.querySelector('#result').textContent = 'Keep adding numbers...'
+      document.querySelector('#result').textContent = 'Keep collecting...'
+      document.querySelector('#gameMessenger').textContent = ''
     }
   }
 })

@@ -19,11 +19,9 @@ const init = _ => {
   document.querySelector('#goalNum').textContent = `Goal Number : ${goalNum}`
   document.querySelector('#currNum').textContent = `Current Value : ${currNum}`
   document.querySelector('#result').textContent = ''
-
-  
-  
 }
 
+//Set a data attribute for the individual character buttons
 for (let i = 0; i < document.querySelectorAll('.character').length; i++)
 {
  let randNum = Math.floor(Math.random() * 20) + 1
@@ -31,11 +29,10 @@ for (let i = 0; i < document.querySelectorAll('.character').length; i++)
  document.querySelectorAll('.character')[i].setAttribute('data-btn-value',randNum)
 }
 
-console.log(document.querySelectorAll('.character'))
 
-// listener for random number buttons
+// listener for character buttons
 document.addEventListener('click', e => {
-  // make sure thing clicked is random number button and that the game has not ended yet
+ //if character clicked and game is not finished yet
   if (e.target.className === 'character responsive-img' && !isDone) {
     // grab the number from the data-value attribute and parse it
 

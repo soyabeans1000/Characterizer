@@ -5,3 +5,5 @@ You will be given a random number at the begining of the game. The goal of the g
 
 TECHNOLOGIES USED: Materialize CSS, Disney Font and Vanilla Javascript for DOM Manipulation 
 https://soyabeans1000.github.io/Characterizer/
+
+<img src="https://soyabeans1000.github.io/images/Portfolio/characterizer.jpg">
